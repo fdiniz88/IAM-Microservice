@@ -306,7 +306,7 @@ namespace IamMicroservice.Admin.Api.Controllers
             var createdUser = await _identityService.GetUserAsync(userId.ToString());
 
             //Add Role to the new User
-            var role = await _identityService.GetRoleAsync("125ccf16-efb6-4b1f-bd22-0590f9cf9ab9");
+            var role = await _identityService.GetRoleAsync("38d2b698-9d98-41ca-8bbb-50e91b878b97");//ReserveHolder
             var userAndRole = new UserRoleApiDto<TKey>();
             userAndRole.UserId = createdUser.Id;
             userAndRole.RoleId = role.Id;
